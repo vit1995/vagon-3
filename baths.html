@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231025011225">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="400" data-scroll-show class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="menu__top">
+
+						<div class="menu__logo">
+							<a href="#">ООО "Стройсистема"</a>
+							<!-- <a href="#"> <picture><source srcset="img/logo/logo.webp" type="image/webp"><img src="img/logo/logo.jpg" alt="logo"></picture></a> -->
+						</div>
+						<p class="menu__text">
+							Производство бытовок, дачных домов , металлоконструкций
+						</p>
+						<div data-da=".menu__bottom, 768 ,2" class="menu__contact">
+							<ul class="menu__contact-list">
+								<li class="menu__contact-link">
+									<address class="icon-map"> г Хабаровск Ул. Доватора 3</address>
+								</li>
+								<li class="menu__contact-link icon-clock">Понедельник-пятница с 9-18 ч.</li>
+								<li class="menu__contact-link icon-clock">Суббота с 9-15 ч.</li>
+								<li class="menu__contact-link icon-mail"> <a
+										href="mailto:besedovka@mail.ru">e-mail:besedovka@mail.ru</a> </li>
+							</ul>
+						</div>
+						<div data-da=".menu__bottom, 768" class="menu__tender tender-menu">
+							<div class="tender-menu__tel"> <a href="tel:+83912313080"> 8 (914 )400-78-90 </a> </div>
+							<div class="tender-menu__tel"> <a href="tel:+83912313080"> 8 (900) 340-52-52 </a> </div>
+							<div class="tender-menu__button"><a data-popup="#popup-one" href="#" class="button">ПРИГЛАСИТЬ В
+									ТЕНДЕР
+								</a> </div>
+						</div>
+						<button data-ripple type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+					<div class="menu__bottom">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="home.html" class="menu__link">Главная </a></li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Вагон-дома</a>
+									<span class="menu__arrow"></span>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-link"><a href="#">Жилые</a></li>
+										<li class="menu__sub-link"><a href="#">Дачные </a></li>
+										<li class="menu__sub-link"><a href="#">Строительные</a></li>
+										<li class="menu__sub-link"><a href="#">Бани</a></li>
+										<li class="menu__sub-link"><a href="#">Прорабские</a></li>
+										<li class="menu__sub-link"><a href="#">Из сэндвич-панелей</a></li>
+										<li class="menu__sub-link"><a href="#">На санях</a></li>
+										<li class="menu__sub-link"><a href="#">На шасси</a></li>
+										<li class="menu__sub-link"><a href="#">В наличии</a></li>
+										<li class="menu__sub-link"><a href="#">Аренда бытовок</a></li>
+										<li class="menu__sub-link"><a href="#">Комплектующие</a></li>
+									</ul>
+
+								</li>
+								<li class="menu__item"><a target="_blank" href="baths.html" class="menu__link">Дачные домики</a>
+								</li>
+								<li class="menu__item"><a href="#" class="menu__link">Каркасные здания</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Выполненные объекты</a></li>
+								<li class="menu__item"><a data-goto=".page__calculator" href="#"
+										class="menu__link">Калькулятор</a>
+
+								</li>
+								<li class="menu__item"><a href="#" class="menu__link">вакансии</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+
+
+							</ul>
+
+						</nav>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+		</header>
+		<div id="popup-one" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<div class="popup__text form-solution">
+						<div class="form-solution__body">
+
+							<form data-ajax class="form-solution__form form" action="files/sendmail/sendmail.php" method="POST"
+								enctype="multipart/form-data">
+								<div class="form-solution__title form-solution__title--small">Для приглашения в тендер
+									прикрепите
+									файлы и
+									оставьте контактные данные
+								</div>
+								<label class="form-solution__label form-solution__label--popup-header" for="c_13">Прикрепите
+									файл</label>
+								<div class="form-solution__item-file">
+									<input accept="jpeg,png,gif" id="c_13" type="file" name="form[]"
+										class="form-solution__input-file">
+									<div class="form-solution__button-file form-solution__button-file--popup-header">Выбрать файл
+									</div>
+								</div>
+								<input data-required autocomplete="off" type="text" name="form[]" data-error="Заполните поле"
+									placeholder="Ваше имя" class="form-solution__input input">
+								<input data-required autocomplete="off" type="tel" name="form[]" data-error="Заполните поле"
+									placeholder="Ваш телефон" class="form-solution__input input">
+								<div class="form-solution__file-preview"></div>
+								<div class="checkbox">
+									<input data-required id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox"
+										value="1" name="form[]">
+									<label for="c_2" class="checkbox__label"><span class="checkbox__text"> Согласен с
+											пользоватеским
+											соглашение</span></label>
+								</div>
+								<button data-ripple type="submit"
+									class="form-solution__button form-solution__button--popup--header">Пригласить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-two" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content popup__content--ful">
+					<button data-close type="button" class="popup__close">Закрыть</button>
+					<div class="popup__text article-popup">
+						<div class="article-popup__container">
+							<div class="article-popup__top top-article-popup">
+								<div class="top-article-popup__images-ibg top-article-popup__images-ibg_contain">
+									<picture>
+										<source srcset="img/object-baths/trea/01.webp" type="image/webp"><img
+											src="img/object-baths/trea/01.png" alt="carriage">
+									</picture>
+								</div>
+								<div class="top-article-popup__body">
+									<h2 class="top-article-popup__title ">Двухсекционная баня 4х3 м</h2>
+									<div class="top-article-popup__price">400 000р.</div>
+								</div>
+
+							</div>
+							<div class="article-popup__bottom bottom-article-popup">
+								<div class="bottom-article-popup__title">Смотрите также</div>
+								<div class="bottom-article-popup__body bottom-article-popup__body--gap">
+									<article class="carriage-tabs__colum">
+										<div class="project__images carriage-tabs__images-ibg carriage-tabs__images-ibg_contain ">
+											<a href="#">
+												<picture>
+													<source srcset="img/object-baths/two/01.webp" type="image/webp"><img
+														src="img/object-baths/two/01.png" alt="carriage">
+												</picture>
+											</a>
+										</div>
+										<h3 class="carriage-tabs__title">Двухсекционная баня 4х2,4 м</h3>
+										<div class="carriage-tabs__price">362 500р.</div>
+										<div class="carriage-tabs__buttons">
+											<a data-popup="#popup-two" href="#"
+												class="tender-menu__button carriage-tabs__button">Подробнее</a>
+
+										</div>
+									</article>
+									<article class="carriage-tabs__colum">
+										<div class="carriage-tabs__images-ibg  carriage-tabs__images-ibg_contain">
+											<picture>
+												<source srcset="img/object-baths/two/01.webp" type="image/webp"><img
+													class="carriage-tabs__img" src="img/object-baths/two/01.png" alt="carriage">
+											</picture>
+
+										</div>
+										<h3 class="carriage-tabs__title">Трехсекционная баня 6х2,4 м</h3>
+										<div class="carriage-tabs__price">475 500р.</div>
+										<div class="carriage-tabs__buttons">
+											<a data-popup="#popup-two" href="#"
+												class="tender-menu__button  carriage-tabs__button">Подробнее</a>
+
+										</div>
+									</article>
+									<article class="carriage-tabs__colum">
+										<div class="carriage-tabs__images-ibg carriage-tabs__images-ibg_contain">
+											<a href="#">
+												<picture>
+													<source srcset="img/object-baths/trea/01.webp" type="image/webp"><img
+														src="img/object-baths/trea/01.png" alt="carriage">
+												</picture>
+											</a>
+										</div>
+										<h3 class="carriage-tabs__title">Двухсекционная баня 4х2,4 м</h3>
+										<div class="carriage-tabs__price">362 500р.</div>
+										<div class="carriage-tabs__buttons">
+											<a data-popup="#popup-two" href="#"
+												class="tender-menu__button carriage-tabs__button">Подробнее</a>
+
+										</div>
+									</article>
+									<article class="carriage-tabs__colum">
+										<div class="carriage-tabs__images-ibg  carriage-tabs__images-ibg_contain">
+											<a href="#">
+												<picture>
+													<source srcset="img/object-baths/trea/01.webp" type="image/webp"><img
+														src="img/object-baths/trea/01.png" alt="carriage">
+												</picture>
+											</a>
+										</div>
+										<h3 class="carriage-tabs__title">Трехсекционная баня 6х2,4 м</h3>
+										<div class="carriage-tabs__price">475 500р.</div>
+										<div class="carriage-tabs__buttons">
+											<a data-popup="#popup-two" href="#"
+												class="tender-menu__button  carriage-tabs__button">Подробнее</a>
+
+										</div>
+									</article>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__home home">
+				<div class="home__container">
+					<div class="home__body">
+						<div data-watch-once data-watch-threshold="0.5" data-watch class="home__content content-home">
+							<h1 class="home__title">Собственная баня на основе вагончика</h1>
+							<div class="home__text">Узнайте преимущества и стоимость наших модульных бань и почувствуйте
+								реальную выгоду</div>
+						</div>
+						<div class="home__sliders">
+							<div class="home__slider swiper">
+								<!-- Частина слайдера, що рухається -->
+								<div class="home__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="home__slide swiper-slide slide-images-ibg">
+										<picture>
+											<source srcset="img/carriage/01.webp" type="image/webp"><img src="img/carriage/01.jpg"
+												alt="">
+										</picture>
+									</div>
+									<div class="home__slide swiper-slide slide-images-ibg">
+										<picture>
+											<source srcset="img/carriage/02.webp" type="image/webp"><img src="img/carriage/02.jpg"
+												alt="">
+										</picture>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+			<div class="calculator__slide swiper-slide ">
+				<div class="calculator__colum-range none">
+					<div class="calculator__length length-calculator">
+						<div class="length-calculator__title">Длинна в метрах</div>
+						<div class="length-calculator__range" id="range-length"></div>
+						<div class="length-calculator__numbers">
+							<div class="length-calculator__number">
+								2
+							</div>
+							<div class="length-calculator__numbers">
+								12
+							</div>
+						</div>
+
+					</div>
+
+					<div class="calculator__length range-width">
+						<div class="range-width__title">Ширина в метрах</div>
+						<div class="range-width__range" id="range-width"></div>
+						<div class="length-calculator__numbers">
+							<div class="length-calculator__number">
+								2
+							</div>
+							<div class="length-calculator__numbers">
+								12
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+			<nav class="page__breadcrumbs breadcrumbs">
+				<div class="breadcrumbs__container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__link"><a href="#">Модули Сибири</a></li>
+						<li class="breadcrumbs__link"><span class="breadcrumbs__current">Бани</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section class="page__block-2 block-2">
+				<div class="block-2__container">
+					<div class="block-2__images-ibg">
+						<picture>
+							<source srcset="img/block-2/01.webp" type="image/webp"><img src="img/block-2/01.png" alt="">
+						</picture>
+					</div>
+					<div class="block-2__content">
+						<h2 class="block-2__title">Что такое модульная баня?</h2>
+						<div class="block-2__text">Модульная баня, или как их еще называют каркасная - это баня, собранная на
+							каркасе. Каркас может быть как деревянным, так и металлическим. Мы <span>используем только
+								металлический каркас</span>.Поэтому наши бани служат до 3-х раз дольше и легко транспортируются
+							до до 50 раз.</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__why why">
+				<div class="why__container">
+					<div data-watch-once data-watch-threshold="0.5" data-watch class="why__title tittle-bold">
+						Почему модульные бани набирают популярность
+					</div>
+					<div class="why__body">
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/01.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Качество</div>
+							</div>
+							<div class="why__text">Все элементы бань проверяются перед сборкой. На каждом этапе сборки у нас
+								есть точки контроля, которые позволяют производить продукт максимально качественно</div>
+						</div>
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/02.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Экономия</div>
+							</div>
+							<div class="why__text">Our managers are always ready to answer your questions. You can call us at
+								the weekends and at night.</div>
+						</div>
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/03.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Теплоэффективность</div>
+							</div>
+							<div class="why__text">Стены и потолок мы утепляем минеральной плитой толщиной 100мм, что позволяет
+								бане быстро нагреваться и долго не остывать</div>
+						</div>
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/04.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Теплоэффективность</div>
+							</div>
+							<div class="why__text">Стены и потолок мы утепляем минеральной плитой толщиной 100мм, что позволяет
+								бане быстро нагреваться и долго не остывать</div>
+						</div>
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/05.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Мобильность</div>
+							</div>
+							<div class="why__text">Именно мы делаем модульные бани на металлическом каркасе. Решили поменять
+								участок? Заберите любимую баню с собой!.</div>
+						</div>
+						<div class="why__colum">
+							<div class="why__row-top">
+								<div class="why__images">
+									<img src="img/svg/06.svg" alt="star">
+
+								</div>
+								<div class="why__subtitle">Нет мусора</div>
+							</div>
+							<div class="why__text">Все работы производятся у нас на производстве. На Ваш участок мы привезем
+								полностью готовую баню и только установим ее</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__tippy">
+				<div class="tippy__container">
+					<h5 data-watch-once data-watch-threshold="0.5" data-watch class="tippy__title tittle-bold--center">
+						Производим бани потому, что сами их любим</h5>
+					<div class="tippy__body">
+						<div data-watch-once data-watch class="tippy__images-ibg">
+							<picture>
+								<source srcset="img/tippy-object/01.webp" type="image/webp"><img src="img/tippy-object/01.png"
+									alt="tippy">
+							</picture>
+
+						</div>
+						<div class="tippy__item">
+							<div
+								data-tippy-content="Внешняя отделка выполняется на выбор: профлист или металлосайдинг под брус или блок-хаус"
+								class="tippy__tip tippy__tip-1">
+								<span>+</span>
+							</div>
+							<div
+								data-tippy-content="В бани мы устанавливаем утепленную металлическую дверь нашего производства с надежным замком "
+								class="tippy__tip tippy__tip-2"><span>+</span></div>
+							<div data-tippy-content="Защита от печи" class="tippy__tip tippy__tip-3"><span>+</span>
+							</div>
+							<div data-tippy-content="
+							Мы оборудуем бани пологами и всем необходимым для комфортного отдыха
+							" class="tippy__tip tippy__tip-4"><span>+</span></div>
+							<div data-tippy-content="
+							Электрическая или твердотопливная печь с каменкой на выбор
+							" class="tippy__tip tippy__tip-5"><span>+</span></div>
+							<div data-tippy-content="Трехкамерные поворотно-откидные окна 900х600"
+								class="tippy__tip tippy__tip-6"><span>+</span></div>
+						</div>
+					</div>
+
+					<div></div>
+				</div>
+			</section>
+			<section class="page__parallax-colum parallax-colum">
+				<div class="parallax-colum__container">
+					<h2 data-watch-once data-watch-threshold="0.5" data-watch
+						class="parallax-colum__title tittle-bold tittle-bold--size tittle-bold--center tittle-bold--while">
+						Модульная баня это
+						практично и
+						комфортно</h2>
+					<div class="parallax-colum__body">
+						<div class="parallax-colum__colum">
+							<div class="parallax-colum__number">45</div>
+							<div class="parallax-colum__text">минут необходимо для нагрева бани чтобы можно было париться</div>
+						</div>
+						<div class="parallax-colum__colum">
+							<div class="parallax-colum__number">37%</div>
+							<div class="parallax-colum__text">экономия на топливе в сравнении с брусовой баней такого же
+								размера</div>
+						</div>
+						<div class="parallax-colum__colum">
+							<div class="parallax-colum__number">145</div>
+							<div class="parallax-colum__text">семей Красноярского края уже наслаждаются в наших банях</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__project project">
+				<div class="project__container">
+					<h2 data-watch-once data-watch-threshold="0.5" data-watch
+						class="project__title tittle-bold--center tittle-bold">Типовые проекты с ценами</h2>
+					<div style="text-align: center;" class="project__subtitle">В стоимость входит вся мебель и оборудование
+						для комфортного отдыха</div>
+					<div class="tabs__body carriage-tabs ">
+						<article class="carriage-tabs__colum">
+							<div class="project__images carriage-tabs__images-ibg carriage-tabs__images-ibg_contain ">
+								<a href="#"><img src="img/object-baths/two/01.png" alt="carriage"></a>
+							</div>
+							<h3 class="carriage-tabs__title">Двухсекционная баня 4х2,4 м</h3>
+							<div class="carriage-tabs__price">362 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+						<article class="carriage-tabs__colum">
+							<div class="carriage-tabs__images-ibg  carriage-tabs__images-ibg_contain">
+								<img class="carriage-tabs__img" src="img/object-baths/two/01.png" alt="carriage">
+
+							</div>
+							<h3 class="carriage-tabs__title">Трехсекционная баня 6х2,4 м</h3>
+							<div class="carriage-tabs__price">475 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button  carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+						<article class="carriage-tabs__colum">
+							<div class="carriage-tabs__images-ibg carriage-tabs__images-ibg_contain">
+								<a href="#"><img src="img/object-baths/trea/01.png" alt="carriage">
+							</div>
+							<h3 class="carriage-tabs__title">Двухсекционная баня 4х2,4 м</h3>
+							<div class="carriage-tabs__price">362 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+						<article class="carriage-tabs__colum">
+							<div class="carriage-tabs__images-ibg  carriage-tabs__images-ibg_contain">
+								<a href="#"><img src="img/object-baths/trea/01.png" alt="carriage"></a>
+							</div>
+							<h3 class="carriage-tabs__title">Трехсекционная баня 6х2,4 м</h3>
+							<div class="carriage-tabs__price">475 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button  carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+						<article class="carriage-tabs__colum">
+							<div class="carriage-tabs__images-ibg carriage-tabs__images-ibg_contain">
+								<a href="#"><img src="img/object-baths/trea/01.png" alt="carriage"></a>
+							</div>
+							<h3 class="carriage-tabs__title">Двухсекционная баня 4х2,4 м</h3>
+							<div class="carriage-tabs__price">362 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+						<article class="carriage-tabs__colum">
+							<div class="carriage-tabs__images-ibg  carriage-tabs__images-ibg_contain">
+								<a href="#"><img src="img/object-baths/trea/01.png" alt="carriage"></a>
+							</div>
+							<h3 class="carriage-tabs__title">Трехсекционная баня 6х2,4 м</h3>
+							<div class="carriage-tabs__price">475 500р.</div>
+							<div class="carriage-tabs__buttons">
+								<a data-popup="#popup-two" href="#"
+									class="tender-menu__button  carriage-tabs__button">Подробнее</a>
+
+							</div>
+						</article>
+
+					</div>
+				</div>
+			</div>
+			<div class="page__form-baths form-baths">
+				<div class="form-baths__container">
+					<div data-watch-once data-watch-threshold="0.5" data-watch
+						class="form-baths__title tittle-bold  tittle-bold--center tittle-bold--while">
+						Нужны другие размеры, планировка или отделка?
+					</div>
+					<div class="form-baths__text">Отправьте свой контактный телефон и мы свяжемся с Вами для обсуждения
+						Вашего проекта</div>
+					<form class="form-baths__forms" action="files/sendmail/sendmail.php" method="POST">
+						<input data-required autocomplete="off" type="tel" name="form[]" data-error="Ошибка"
+							placeholder="Ваш Номер" class="form-baths__input input">
+						<button data-ripple type="submit" class="form-baths__button button tender-menu__button ">Отправить
+							контакты</button>
+					</form>
+					<div class="form-baths__agreement">Отправляя свои контактные данные вы соглашаетесь с <a
+							href="#">политикой конфиденциальности</a></div>
+				</div>
+			</div>
+			<section class="page__finishing finishing">
+				<div class="finishing__container">
+					<h2 data-watch-once data-watch-threshold="0.5" data-watch
+						class="finishing__title tittle-bold tittle-bold--center">Фото внутренней отделки наших бань</h2>
+					<div data-gallery class="finishing__body">
+						<a href="img/galeria-baths/01.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/01.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/01.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/02.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/02.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/02.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/03.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/03.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/03.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/04.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/04.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/04.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/05.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/05.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/05.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/06.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/06.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/06.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/07.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/07.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/07.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/08.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/08.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/08.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/09.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/09.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/09.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/10.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/10.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/10.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths/011.jpeg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths/011.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths/011.jpeg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="page__finishing finishing">
+				<div class="finishing__container">
+					<h2 data-watch-once data-watch-threshold="0.5" data-watch
+						class="finishing__title tittle-bold tittle-bold--center">Фото наших бань снаружи</h2>
+					<div data-gallery class="finishing__body">
+						<a href="img/galeria-baths-two/01.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/01.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/01.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/02.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/02.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/02.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/03.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/03.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/03.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/04.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/04.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/04.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/05.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/05.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/05.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/06.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/06.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/06.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/07.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/07.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/07.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/08.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/08.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/08.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+						<a href="img/galeria-baths-two/09.jpg" class="finishing__images-ibg gallery__image">
+							<picture>
+								<source srcset="img/galeria-baths-two/09.webp" type="image/webp"><img alt="Превью"
+									src="img/galeria-baths-two/09.jpg" class="finishing__preview gallery__preview">
+							</picture>
+						</a>
+					</div>
+					<a data-ripple href="" type="button"
+						class="tender-menu__button finishing__button  tender-menu__button--finishing">Больше объектов</a>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body-top">
+					<div class="footer__colum colum-logo">
+						<div class="colum-logo__logo">
+							<a href="#">ООО "Стройсистема"</a>
+						</div>
+						<div class="colum-logo__information-company">
+							ООО "Стройсистема"
+							ИНН / КПП 2465346125 / 246501001
+							ОГРН 1222400008269
+							© 2008-2022 г. Красноярск
+							ООО "ПК МСИБ". Все права защищены.
+
+						</div>
+						<p class="colum-logo__public">Данный ресурс не является публичной офертой и носит исключительно
+							информационный
+							характер.</p>
+					</div>
+					<div class="footer__colum colum-undress">
+						<div data-one-spoller data-spollers="768,max" class="colum-undress__body spollers">
+							<datails class="colum-undress__item spollers__item">
+								<summary type="button" data-spoller class="colum-undress__title spollers__title">Разделы
+								</summary>
+								<div class="colum-undress__body spollers__body">
+									<ul class="colum-undress__list">
+										<li class="colum-undress__link"><a href="#">Бытовки </a></li>
+										<li class="colum-undress__link"><a href="#">Модульные здания </a></li>
+										<li class="colum-undress__link"><a href="#">Каркасные здания </a></li>
+										<li class="colum-undress__link"><a href="#">Бытовки </a></li>
+									</ul>
+								</div>
+							</datails>
+						</div>
+					</div>
+					<div class="footer__colum colum-information">
+						<div data-one-spoller data-spollers="768,max" class="colum-information__body spollers">
+							<datails class="colum-information__item spollers__item">
+								<summary type="button" data-spoller class="colum-information__title spollers__title">ИНФОРМАЦИЯ
+								</summary>
+								<div class="colum-information__body spollers__body">
+									<ul class="colum-information__list">
+										<li class="colum-information__link"><a href="#">О компании</a></li>
+										<li class="colum-information__link"><a href="#">Калькулятор</a></li>
+										<li class="colum-information__link"><a href="#">Работы</a></li>
+										<li class="colum-information__link"><a href="#">Статьи</a></li>
+									</ul>
+								</div>
+							</datails>
+						</div>
+					</div>
+					<div class="footer__colum colum-contacts">
+						<div data-one-spoller data-spollers="768,max" class="colum-contacts__body spollers">
+							<datails class="colum-contacts__item spollers__item">
+								<summary type="button" data-spoller class="colum-contacts__title spollers__title">КОНТАКТЫ
+								</summary>
+								<div class="colum-contacts__body spollers__body">
+									<ul class="colum-contacts__list">
+										<address>Ул. Доватора 3</address>
+										<li class="colum-contacts__link"><a href="#">Работаем: Пн - Пт с 9 до 18ч</a></li>
+										<li class="colum-contacts__link"><a href="#">сб с 9 до 15ч</a></li>
+										<li class="colum-contacts__link"><a href="tel:89144007890">8 (914 )400-78-90 </a></li>
+										<li class="colum-contacts__link"><a href="tel: 89003405252 "> 8 (900) 340-52-52 </a></li>
+										<li class="colum-undress__link"><a
+												href="mailto:besedovka@mail.ru">e-mail:besedovka@mail.ru</a>
+										</li>
+
+									</ul>
+									<p>Политика конфиденциальности</p>
+									<p>Пользовательское соглашение</p>
+								</div>
+							</datails>
+						</div>
+					</div>
+				</div>
+				<div>
+					<a href="#" class="footer__bottom">Все материалы на сайте являются авторским уникальным контентом.
+						Копирование
+						материалов с
+						сайта преследуется по закону. Данный ресурс не является публичной офертой и носит исключительно
+						информационный
+						характер</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.min.js?_v=20231025011225"></script>
+</body>
+
+</html>
